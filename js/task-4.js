@@ -1,17 +1,6 @@
-/*
-Задача 4. Загальний баланс
+const getTotalBalanceByGender = (users, gender) => users.reduce((acc, item) =>
+  (item.gender === gender ? acc + item.balance : acc), 0);
 
-Напиши стрілочну функцію getTotalBalanceByGender(users, gender),
-    яка прийматиме два параметра:
-перший параметр users — масив об’єктів користувачів,
-другий параметр gender — рядок, що зберігає стать.
-Функція має використовувати ланцюжок виклику методів та повертати загальний 
-баланс користувачів(властивість balance), стать яких(властивість gender) 
-збігається зі значенням параметра gender.
-*/
-
-
-/*
 const clients = [
 	{
     name: "Moore Hensley",
@@ -53,5 +42,3 @@ const clients = [
 console.log(getTotalBalanceByGender(clients, "male")); // 12053
 
 console.log(getTotalBalanceByGender(clients, "female")); // 8863
-
-*/
